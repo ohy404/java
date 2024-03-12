@@ -14,7 +14,9 @@ public class exam03 {
         System.out.println(d);
 
         String e = "\u2500\u2510";
+        String f = "\u250c\u2500\u2510\n\u2514\u2500\u2518";
 
         System.out.println(e);
+        System.out.println(f);
     }
 }
