@@ -10,7 +10,7 @@ public class exam03 {
         //char d = '\u231a';
         char d = '\u2460';
 
-        System.out.println(c);
+        System.out.println(c);  
         System.out.println(d);
 
         String e = "\u2500\u2510";
