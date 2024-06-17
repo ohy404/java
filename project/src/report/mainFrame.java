@@ -47,8 +47,8 @@ public class mainFrame extends JFrame {
                         Rect.setSelected(false);
                         Arc.setSelected(false);
                     }    
-            }
-        });
+                }
+            });
         Eraser.addActionListener(new ActionListener(){
             @Override
                 public void actionPerformed(ActionEvent e){
@@ -59,8 +59,8 @@ public class mainFrame extends JFrame {
                         Rect.setSelected(false);
                         Arc.setSelected(false);
                     }
-            }
-        });
+                }
+            });
         Line.addActionListener(new ActionListener(){
             @Override
                 public void actionPerformed(ActionEvent e){
@@ -71,8 +71,8 @@ public class mainFrame extends JFrame {
                         Rect.setSelected(false);
                         Arc.setSelected(false);
                     }
-            }
-        });
+                }
+            });
         Rect.addActionListener(new ActionListener(){
             @Override
                 public void actionPerformed(ActionEvent e){
@@ -83,8 +83,8 @@ public class mainFrame extends JFrame {
                         Line.setSelected(false);
                         Arc.setSelected(false);
                     }
-            }
-        });
+                }
+            });
         Arc.addActionListener(new ActionListener(){
             @Override
                 public void actionPerformed(ActionEvent e){
@@ -95,9 +95,8 @@ public class mainFrame extends JFrame {
                         Line.setSelected(false);
                         Rect.setSelected(false);
                     }
-
-            }
-        });
+                }
+            });
         Checkfill.addActionListener(new ActionListener(){
             @Override
                 public void actionPerformed(ActionEvent e){
@@ -105,7 +104,6 @@ public class mainFrame extends JFrame {
                         fillCheck = true; 
                     }
                     else fillCheck = false;
-
             }
         });
         saveItem.addActionListener(e -> saveImage()); // 세이브 및 로드 설정
@@ -157,7 +155,6 @@ public class mainFrame extends JFrame {
                     break;
                 }
                 g.dispose();
-                
                 repaint();
         }
         public void paintComponent(Graphics g) { 
@@ -201,8 +198,8 @@ public class mainFrame extends JFrame {
                 g.drawLine(fx, fy, sx, sy);
                 sx = e.getX();
                 sy = e.getY();
-                repaint();
                 g.dispose();
+                repaint();
             } else if (select == 3) {
                 Graphics g = getGraphics();
 
@@ -216,8 +213,8 @@ public class mainFrame extends JFrame {
                 }
                 sx = e.getX();
                 sy = e.getY();
-                repaint();
                 g.dispose();
+                repaint();
             } else if (select == 4) {
     
                 Graphics g = getGraphics();
